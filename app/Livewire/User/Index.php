@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\User;
 
 use App\Models\User;
 use Livewire\Component;
 
-class UsersIndex extends Component
+class Index extends Component
 {
     public function render()
     {
-        return view('livewire.users-index', [
+        return view('livewire.user.index', [
             'users' => User::all(),
         ]);
     }

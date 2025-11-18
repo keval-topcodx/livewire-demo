@@ -1,7 +1,7 @@
 <div>
     <h2 class="fw-bold mb-3">All Users</h2>
     <div class="mt-3 d-flex justify-content-end">
-        <a href="{{ route('users.create') }}" class="btn btn-primary mb-3">Create User</a>
+        <a href="{{ route('user.create') }}" class="btn btn-primary mb-3">Create User</a>
     </div>
 
     <table class="table table-bordered">
@@ -32,7 +32,7 @@
                     </div>
                 </td>
                 <td>
-                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-sm btn-warning">
+                    <a href="{{ route('user.edit', $user->id) }}" class="btn btn-sm btn-warning">
                         Edit
                     </a>
 

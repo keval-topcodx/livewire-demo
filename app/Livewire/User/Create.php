@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\User;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -8,7 +8,7 @@ use Illuminate\Validation\Rules\Password;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
-class Users extends Component
+class Create extends Component
 {
     use WithFileUploads;
 
@@ -50,7 +50,7 @@ class Users extends Component
 
     public function render()
     {
-        return view('livewire.users');
+        return view('livewire.user.create');
     }
 
     public function submit()
@@ -84,7 +84,7 @@ class Users extends Component
 
         session()->flash('status', 'User Created.');
 
-        $this->redirectRoute('users.index');
+        $this->redirectRoute('user.index');
 
     }
 
